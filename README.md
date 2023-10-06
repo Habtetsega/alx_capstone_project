@@ -28,4 +28,4 @@ The personal portfolio project aims to showcase my skills, experience, and proje
 ## Contact Information:
 - Name: Sitotaw Ashagre
 - Email: kido3871@gmail.com
-- LinkedIn: [linkedin.com/in/sitotawashagre](https://www.linkedin.com/in/sitotawashagre)
+- LinkedIn: [linkedin.com/in/sitotaw-ashagre](https://www.linkedin.com/in/sitotaw-ashagre-68a0aa252/)
