@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale = 1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='portfolio.css') }}" />
+    <title>My Portfolio</title>
+</head>
+<body>
+    <header class="header">
+        <div class="nav">
+            <div class="logo"><img src="static/image/logo.png" alt="SA" /></div>
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+            <nav class="nav-list">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skill">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+    
+        </div>
+    </header>
+    <section class="home">
+        <div class="intro-cont">
+            <h1>Sitotaw <br />Ashagre.</h1>
+            <hr />
+            <div class="link">
+                <a href="https://twitter.com/Habtetsegas?t=4Fxk6SYsY9gKxBIcl13haA&s=09">Twitter/</a>
+                <a href="https://t.me/habtetsega">Telegram</a><br />
+                <a href="https://www.linkedin.com/in/sitotaw-ashagre-68a0aa252/">Linkedin/</a>
+                <a href="https://discordapp.com/users/abu684">Discord</a><br />
+                <hr />
+                <a href="#contact"><button>CONTACT ME</button></a>
+            </div>
+        </div>
+        <div class="photo">
+            <img src="static/image/me.png" />
+        </div>
+        <div class="intro">
+            <p class="intro-para">INTRODUCTION</p>
+            <h1>Full Stack Web Developer</h1>
+            <p>
+                A Passionate Web Developer and Designer Based in Ethiopia. I am Currently Learning In alx
+                <br />A Passionate Web Developer and Designer Based in Ethiopia. I am Currently Learning In alx
+                <br />A Passionate Web Developerand Designer Based in Ethiopia. I am Currently Learning In alx
+                <br />A Passionate Web Developerand Designer Based in Ethiopia. I am Currently Learning In alx
+            </p>
+            <a href="https://www.linkedin.com/in/sitotaw-ashagre-68a0aa252/" class="more"><p>READ MORE</p></a>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <circle><img src="static/image/face.png" /></circle>
+        <h3>Sitotaw Ashagre</h3>
+        <p>
+            A Passionate Web Developer and Designer Based in Ethiopia. I am Currently Learning In alx
+            A Passionate Web Developer <br />and Designer Based in Ethiopia. I am Currently Learning In alx
+            A Passionate Web Developer and Designer Based in Ethiopia.<br />
+            A Passionate Web Developer and Designer Based in Ethiopia. I am Currently Learning In alx
+            A Passionate Web Developer <br />and Designer Based in Ethiopia. I am Currently Learning In alx
+            A Passionate Web Developer and Designer Based in Ethiopia.
+
+        </p>
+
+    </section>
+    <section class="skill" id="skill">
+        <div class="skill-first">
+            <h1 class="skill-head">Skills</h1>
+            <p class="skill-paragraph">
+                I am proficient in several programming languages including HTML, CSS, JavaScript, PHP, Python,
+                and SQL. I also have experience<br /> with various frameworks and libraries such as
+                jQuery, Django, and Flask. <br />I have worked on various projects that have
+                allowed me to showcase my skills in these areas.I am confident in my ability to create dynamic <br />
+                and responsive web applications that meet the needs of clients and end-users.
+            </p>
+        </div>
+        <div class="skill-box">
+            <div class="skill-box-elm">
+                <i class="fa-solid fa-code" style="font-size:200px"></i>
+                <a href="https://github.com/Habtetsega/alx_python"><h3>Web Development</h3></a>
+                <p>20+ projects</p>
+            </div>
+            <div class="skill-box-elm">
+                <i class="fa-brands fa-python" style="font-size:200px"></i>
+                <a href="https://github.com/Habtetsega/alx_python"><h3>Web Application</h3></a>
+                <p>20+ projects</p>
+            </div>
+            <div class="skill-box-elm">
+                <i class="fa-solid fa-database" style="font-size:200px"></i>
+                <a href="https://github.com/Habtetsega/alx_database"><h3>DataBase Mannegment</h3></a>
+                <p>20+ projects</p>
+            </div>
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <div class="projects-first">
+            <h1 class="projects-head">Projects</h1>
+            <p class="projects-paragraph">
+                I am proficient in several programming languages including HTML, CSS, JavaScript, PHP, Python,
+                and SQL. I also have experience<br /> with various frameworks and libraries such as
+                jQuery, Django, and Flask. <br />I have worked on various projects that have
+                allowed me to showcase my skills in these areas.I am confident in my ability to create dynamic <br />
+                and responsive web applications that meet the needs of clients and end-users.
+            </p>
+        </div>
+        <div class="projects-nav">
+            <ul class="projects-nav-list">
+                <li class="projects-nav-list-elm" href="#all" data-toggle="tab">All</li>
+                <li class="projects-nav-list-elm" href="#web" data-toggle="tab">Web Development</li>
+                <li class="projects-nav-list-elm" href="#py" data-toggle="tab">Web Applications</li>
+                <li class="projects-nav-list-elm" href="#sql" data-toggle="tab">Database Mannegment</li>
+            </ul>
+        </div>
+        <div class="tab-content projects-img">
+            <div class="projects-image-all tab-pane fade in active" id="all">
+                <a href=""><img src="static/image/projects/web/web1.gif" /></a>
+                <a href=""><img src="static/image/projects/py/py1.jpg" /></a>
+                <a href=""><img src="static/image/projects/db/db1.jpg" /></a>
+            </div>
+            <div class="projects-image-web tab-pane fade" id="web">
+                <a href=""><img src="static/image/projects/web/web1.gif" /></a>
+                <a href=""><img src="static/image/projects/web/web2.png" /></a>
+                <a href=""><img src="static/image/projects/web/web3.jpg" /></a>
+            </div>
+            <div class="projects-image-py tab-pane fade" id="py">
+                <a href=""><img src="static/image/projects/py/py1.jpg" /></a>
+                <a href=""><img src="static/image/projects/py/py2.jpg" /></a>
+                <a href=""><img src="static/image/projects/py/py3.jpg" /></a>
+            </div>
+            <div class="projects-image-sql tab-pane fade" id="sql">
+                <a href=""><img src="static/image/projects/db/db1.jpg" /></a>
+                <a href=""><img src="static/image/projects/db/db2.jpg" /></a>
+                <a href=""><img src="static/image/projects/db/db1.jpg" /></a>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="cont-form">
+            <form method="POST" action="/contact">
+                <label for="name">Name:</label><br />
+                <input type="text" id="name" name="name" placeholder="Your name" required /><br />
+                <hr />
+                <label for="email">Email:</label><br />
+                <input type="email" id="email" name="email" placeholder="email@gmail.com" required /><br />
+                <hr />
+                <textarea id="message" name="message" cols="30" rows="8" placeholder="your message"></textarea>
+                <br /> <hr />
+                <button>Submit</button>
+            </form>
+        </div>
+
+        
+    </section>
+    <div class="end">
+    <div class="first-class">
+        <a href=""><i class="fa-solid fa-square-envelope" style="font-size:24px"></i>kido3871@gmail.com</a>
+        <a href=""><i class="fa-solid fa-phone" style="font-size:24px"> </i>+251965710436</a>
+        <a href="https://t.me/habtetsega"><i class="fa-brands fa-telegram" style="font-size:24px"></i> </a>
+    </div>
+    <hr />
+    <div class="second-class">
+        <a href="https://github.com/Habtetsega"><i class="fa-brands fa-github" style="font-size:24px"></i> </a>
+        <a href="https://www.linkedin.com/in/sitotaw-ashagre-68a0aa252/"><i class="fa-brands fa-linkedin" style="font-size:24px"></i> </a>
+
+    </div>
+</div>
+
+</body>
+<footer>
+    <a class="back-top" href="#"><i class="fa fa-angle-up" style="font-size:30px"></i></a>
+    <div class="footer-div"></div>
+    
+    &copy;Sitotaw ashagre 2023
+</footer>
+</html>
