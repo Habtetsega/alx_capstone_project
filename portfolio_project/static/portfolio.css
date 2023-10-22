@@ -304,4 +304,40 @@ footer .footer-div {
     #menu-toggle:checked ~ .nav-list ul {
         display: block;
     }
+    /* Adusting home section*/
+    .home {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home .photo img {
+        height: 200px;
+    }
+
+    .about img {
+        height: 200px;
+    }
+
+    .skill .skill-box {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about,
+    .skill,
+    .projects,
+    .contact,
+    .end,
+    footer {
+        height: auto;
+    }
+        /* Adjust logo size */
+    .header .nav .logo {
+        padding-top: 10px;
+        margin-right: 0;
+    }
+
+    .header .nav .logo img {
+        width: 40px;
+        height: 40px;
+    }
 }
