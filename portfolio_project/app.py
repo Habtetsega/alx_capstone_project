@@ -12,6 +12,14 @@ app.config['MAIL_PASSWORD'] = 'hidden'
 
 mail = Mail(app)
 
+def validate_email(email):
+    # Regular expression pattern for email validation
+    pattern = r'^[\w\.-]+@[\w\.-]+\.\w+$'
+    
+    if re.match(pattern, email):
+        return True
+    else:
+        return False
 
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
@@ -22,7 +30,8 @@ def contact():
         name = request.form['name']
         email = request.form['email']
         message = request.form['message']
-
+        if not validate_email(email):
+            return "Invalid email format. Please enter a valid email address."
         send_email(name, email, message)
 
     return render_template('portfolio.html')
